@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- P5 libraries -->
+		<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+
+		<!-- A-Frame libraries -->
+		<script language="javascript" type="text/javascript" src="libraries/aframe.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script language="javascript" type="text/javascript" src="libraries/aframep5.js"></script>
+
+		<!-- P5 Sketch -->
+		<script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+		<!-- custom styles -->
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+	    <a-scene id="VRScene">
+
+			<a-assets id="VRAssets">
+				<img src="snow.jpg" id="snowground">
+				<img src="wrapper1.jpg" id="wrapper1">
+				<img src="wrapper2.jpg" id="wrapper2">
+				<img src= "wrapper3.jpg" id="wrapper3">
+				<a-asset id="model_obj" src="rudolph/model.obj"></a-asset>
+				<a-asset id="materials_mtl" src="rudolph/materials.mtl"></a-asset>
+
+			</a-assets>
+			<a-sky color= "#bED8D8"></a-sky>
+	    </a-scene>
+
+	</body>
+</html>
